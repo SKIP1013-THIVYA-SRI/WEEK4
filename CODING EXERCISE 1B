@@ -1,0 +1,75 @@
+package assignment;
+import java.util.Scanner;
+
+public class Assignment1B {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int itemNum;
+		float firstItmPrice;
+		float firstItmQty;
+		float firstTotal;
+		float secItmPrice;
+		float secItmQty;
+		float secTotal;
+		float thirdItmPrice;
+		float thirdItmQty;
+		float thirdTotal;	
+		float totalPrice;
+		double dis;
+		double pricetopay;
+		
+		Scanner scan = new Scanner (System.in);
+	    System.out.print ("Enter the number of items : ");
+	    itemNum = scan.nextInt();
+	    		
+	    System.out.print ("Enter price of first item : RM");
+	    firstItmPrice = scan.nextFloat();
+	    
+	    System.out.print ("Enter quantity of first item : ");
+	    firstItmQty = scan.nextFloat();
+	    
+	    firstTotal = firstItmPrice * firstItmQty;
+	    System.out.println("");
+	    
+	    System.out.print ("Enter price of second item : RM");
+	    secItmPrice = scan.nextFloat();
+	    
+	    System.out.print ("Enter quantity of second item : ");
+	    secItmQty = scan.nextFloat();
+	    
+	    secTotal = secItmPrice * secItmQty;
+	    System.out.println("");
+	    
+	    System.out.print ("Enter price of third item : RM");
+	    thirdItmPrice = scan.nextFloat();
+	    
+	    System.out.print ("Enter quantity of third item : ");
+	    thirdItmQty = scan.nextFloat();
+	    
+	    thirdTotal = thirdItmPrice * thirdItmQty;
+	    System.out.println("");
+	    
+	    totalPrice = firstTotal + secTotal + thirdTotal;
+	    	    
+	    
+	    if (totalPrice > 100) {	
+	    	dis =  (totalPrice * 20) / 100 ;
+	    	pricetopay = totalPrice - dis;
+	    	System.out.println ("Total price : " + totalPrice);
+	    	System.out.println("Discount received : " + dis);
+	    	System.out.println ("Price to be paid : " + pricetopay);
+	    	} 
+	    
+	    else {	
+	    	dis =  (totalPrice * 10) / 100 ;
+	    	pricetopay = totalPrice - dis;
+	    	System.out.println ("Total price : " + totalPrice);
+	    	System.out.println("Discount received : " + dis);
+	    	System.out.println ("Price to be paid : " + pricetopay);
+	    	} 	    
+	        
+
+	}
+
+}
